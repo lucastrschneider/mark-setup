@@ -7,13 +7,11 @@ DOTFILES_REPO="$HOME/simon-setup"
 # Define an array of files/folders to link and their system targets
 # Format: "repo_path:target_path"
 declare -A links=(
-    ["home/.zshrc"]="$HOME/.zshrc"
+    ["home/.config/starship.toml"]="$HOME/.config/starship.toml"
     ["home/.oh-my-zsh/custom/aliases.zsh"]="$HOME/.oh-my-zsh/custom/aliases.zsh"
     ["home/.oh-my-zsh/custom/pyenv.zsh"]="$HOME/.oh-my-zsh/custom/pyenv.zsh"
     ["home/Templates"]="$HOME/Templates"
-    ["home/.config/starship.toml"]="$HOME/.config/starship.toml"
-    ["home/.local/share/backgrounds"]="$HOME/.local/share/backgrounds"
-    ["home/.local/share/gnome-background-properties"]="$HOME/.local/share/gnome-background-properties"
+    ["home/.zshrc"]="$HOME/.zshrc"
 )
 # ---------------------
 

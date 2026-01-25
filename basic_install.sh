@@ -5,7 +5,7 @@ sudo dnf check-update
 sudo dnf upgrade -y
 
 # Install basic tools
-sudo dnf group install "C Development Tools and Libraries" "Development Tools"
+sudo dnf install @development-tools
 sudo dnf install cmake make python3 python3-pip curl -y
 
 # Install vscode
@@ -25,7 +25,7 @@ sudo dnf check-update
 sudo dnf install code -y
 
 # Other utilities
-sudo dnf install -y htop gnome-tweaks
+sudo dnf install -y htop fastfetch micro
 
 # Pyenv
 curl -fsSL https://pyenv.run | bash
