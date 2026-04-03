@@ -1,8 +1,8 @@
-# Simon Setup
+# Mark Setup
 
 ## Post Install
 
-Install Fedora 43 COSMIC and follow the [Fedora 43 Post Install Guide](https://github.com/devangshekhawat/Fedora-43-Post-Install-Guide), except for the \[Optional\] sections in the end.
+Install Fedora 43 COSMIC and follow the [Fedora 43 Post Install Guide](https://github.com/devangshekhawat/Fedora-43-Post-Install-Guide), except for the `NVIDIA Drivers` and  the \[Optional\] sections in the end.
 
 ## Git
 
@@ -53,12 +53,6 @@ After that, run the *basic install* script.
 
 Follow [this documentation](https://docs.docker.com/engine/install/fedora/) to install Docker.
 
-After that, you can also install rocker if you want.
-
-```bash
-sudo pip3 install rocker
-```
-
 ## Shell
 
 ```bash
@@ -69,12 +63,6 @@ If you want zsh as the default shell.
 
 ```bash
 chsh -s $(which zsh)
-```
-
-## Headset fix
-
-```bash
-./headset_fix.sh
 ```
 
 ## Dotfiles
@@ -91,20 +79,6 @@ chsh -s $(which zsh)
 ./extract_archives.sh
 ```
 
-## Nvitop
-
-Install [nvitop](https://github.com/XuehaiPan/nvitop) to monitor CPU, GPU and memory usage with the terminal.
-
-```bash
-pip3 install --user nvitop
-```
-
-To run as resource monitor:
-
-```bash
-python3 -m nvitop
-```
-
 ## Settings
 
 ### Desktop
@@ -115,7 +89,28 @@ python3 -m nvitop
 
 #### Panel
 
-- Add applets in correct order
+Start segment:
+
+- Numbered Workspaces
+- Minimized Windows
+
+Center segment:
+
+- Date, Time & Calendar
+
+End segment:
+
+- Notifications Tray
+- Clipboard Manager
+- Input Sources
+- Privacy Indicator
+- Sound
+- Tiling
+- Bluetooth
+- Network
+- Power & Battery
+- Nofigications Center
+- User Session
 
 #### Dock
 
@@ -145,10 +140,6 @@ Modify the following keyboard shortcuts:
   - VSCode: `code`, `Super + c`
 
 ## Others
-
-### Automount
-
-Use the **GNOME Disk** to configure the data partition to be automounted at login. Then it is possible to add bookmarks in Nautilus for the folders there.
 
 ### VSCode Theme and Font
 
