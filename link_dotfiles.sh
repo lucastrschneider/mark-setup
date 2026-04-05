@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the location of your repository (the source)
-DOTFILES_REPO="$HOME/simon-setup"
+DOTFILES_REPO="$HOME/mark-setup"
 
 # --- Configuration ---
 # Define an array of files/folders to link and their system targets

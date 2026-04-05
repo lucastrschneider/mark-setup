@@ -41,19 +41,14 @@ xclip -selection clipboard < ~/.ssh/id_ed25519_git.pub
 
 After this point, you should clone this repository in order to run the scripts more easily.
 
-## Basic Applications
-
-After that, run the *basic install* script.
+## Shell
 
 ```bash
-./basic_install.sh
+sudo dnf install zsh
+
+# Oh My Zsh installation
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-
-## Docker
-
-Follow [this documentation](https://docs.docker.com/engine/install/fedora/) to install Docker.
-
-## Shell
 
 ```bash
 ./setup_zsh.sh
@@ -63,6 +58,20 @@ If you want zsh as the default shell.
 
 ```bash
 chsh -s $(which zsh)
+```
+
+### Starship
+
+```bash
+curl -sS https://starship.rs/install.sh | sh
+```
+
+## Basic Applications
+
+After that, run the *basic install* script.
+
+```bash
+./basic_install.sh
 ```
 
 ## Dotfiles
@@ -101,11 +110,12 @@ Center segment:
 End segment:
 
 - Notifications Tray
+- Privacy Indicator
+- Cosmic Pomodoro
 - Clipboard Manager
 - Input Sources
-- Privacy Indicator
-- Sound
 - Tiling
+- Sound
 - Bluetooth
 - Network
 - Power & Battery
@@ -145,3 +155,38 @@ Modify the following keyboard shortcuts:
 
 - Theme **Adwaita Dark & default syntax highlighting & colorful status bar**
 - Open settings and add 'FiraCode Nerd Font' to the start of the list
+
+### Tailscale
+
+Follow this [documentation](https://tailscale.com/docs/install/linux) to install the tailscale client. Then this one to install the [systray](https://tailscale.com/docs/features/client/linux-systray) application.
+
+### Docker
+
+Follow [this documentation](https://docs.docker.com/engine/install/fedora/) to install Docker.
+
+### Pyenv
+
+```bash
+curl -fsSL https://pyenv.run | bash
+```
+
+### Rust
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+### Flatpaks
+
+Install the following directly from the Store:
+
+- Blanket
+- Calibre
+- Discord
+- Flatseal
+- Gear Lever
+- Krita
+- ONLYOFFICE
+- Spotify
+- Upscaler
+- VLC

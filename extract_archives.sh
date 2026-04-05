@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the location of your repository (the source directory where the archives are)
-DOTFILES_REPO="$HOME/simon-setup" 
+DOTFILES_REPO="$HOME/mark-setup" 
 
 # --- Configuration ---
 # Define an associative array mapping the archive filename 
